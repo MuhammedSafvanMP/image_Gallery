@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+    /* Navbar section */
+
 li{
     list-style: none;
 }
 .input-container{
    position: relative;
     width: 100%;
+    border: none;
 }
 .input{
     padding-left: 200px;
@@ -19,9 +23,82 @@ li{
 }
 .search-icon{
     position: absolute;
-    top: 14px;
-    right: 20px;
+    top: 12px;
+    left: 20px;
 }
 .search-icon i{
     font-size: 20px;
+}
+
+    /* Galllery section */
+
+ .images {
+    /* gap: 15px; */
+    columns: 5 340px;
+    max-width: 95%;
+    margin-top: 40px;
+}
+.images .card {
+    position: relative;
+    list-style: none;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.images .card .details {
+    bottom: -100px;
+    width: 100%;
+    padding: 15px 20px;
+    color: #fff;
+    transition: bottom 0.1s ease;
+    background: linear-gradient(to top, rgba(0,0,0,.7), transparent);
+}
+.details span{
+    font-size: 1.2rem;
+}
+.images .card:hover .details {
+    bottom: 0;
+}
+.photographer i {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+.details .photographer span {
+    font-size: 1.05rem;
+}
+.search-box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    font-size: 1.4rem;
+    color: #8d8d8d;
+    transform: translateY(-50%);
+}
+  button, i{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+.button .btn {
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+.images img{
+    width: 100%;
+}
+.gallery .load-more {
+    margin: 50px 0;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 27px;
+    background: #8a6cff;
+}
+.gallery .load-more.disabled{
+    opacity: 0.6;
+    pointer-events: none;
 }
