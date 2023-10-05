@@ -5,7 +5,10 @@
 }
 
     /* Navbar section */
-
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 li{
     list-style: none;
 }
@@ -29,7 +32,18 @@ li{
 .search-icon i{
     font-size: 20px;
 }
+    /* Link section */
 
+    .link-btn{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .btns:hover{
+        color: red;
+    }
+    
     /* Galllery section */
 
  .images {
@@ -101,4 +115,13 @@ li{
 .gallery .load-more.disabled{
     opacity: 0.6;
     pointer-events: none;
+}
+
+    /* Footer section */
+ 
+.copy{
+    font-size: 1.2rem;
+}
+.copy-icons i{
+    font-size: 1.2em;
 }
