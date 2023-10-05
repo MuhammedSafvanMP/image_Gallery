@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.input-container{
+   position: relative;
+    width: 100%;
+}
+.input{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.input::placeholder {
+    width: 100%;
+}
+.search-icon{
+    position: absolute;
+    top: 14px;
+    right: 20px;
+}
+.search-icon i{
+    font-size: 20px;
+}
