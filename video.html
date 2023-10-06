@@ -1,72 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Image Gallery</title>
-    <!-- Fond awsome CDN -->
+    <title>Video Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
-  </head>
-  <body>
-   
+</head>
+<body>
     <!-- Navbar -->
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex p-4">
         <div class="container-fluid d-flex flex-row justify-content-evenly align-content-center">
             <div>
-
                 <a class="navbar-brand" href="#">Imager</a>               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-          
             <div class="d-flex gap-1">
-
                 <li class="nav-item dropdown mt-3">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-video"></i>
-                        videos
+                        Videos
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./index.html"> 
+                        <li><a class="dropdown-item" href="./video.html">
+                            <i class="fa-solid fa-video"></i>
+                            Videos
+                        </a></li>
+                        <li><a class="dropdown-item" href="./index.html">
                             <i class="fa-solid fa-image"></i>
                             Photos
                         </a></li>
-                        <li><a class="dropdown-item" href="./video.html">
-                        <i class="fa-solid fa-video"></i>
-                            Videos
-                        </a></li>
                     </ul>
                 </li>
-                <form class="d-flex px-5" role="search">
-                    <div class="input-container">
-                        <input class="form-control me-2 py-3 input" type="search" placeholder="Search for free Videos" aria-label="Search">
+                <div class="d-flex px-5" role="search">
+                    <div class="search-box ">
+                        <input class="form-control me-2 py-3 input" type="text" placeholder="searh images">
                         <div class="search-icon">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
-                </form>
+            </div> 
             </div>
-        
             <div class="d-flex justify-content-center  align-content-center gap-4">
                 <div class="mt-2">
-                    <i class="fa-solid fa-bell "></i>
+                    <i class="fa-solid fa-bell"></i>
                 </div>
                 <li class="nav-item dropdown">
                     <div class="text-center">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="https://cdn.pixabay.com/photo/2023/04/04/14/19/boy-7899447_1280.jpg" width="50px" class="rounded-circle" alt="...">
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Your Profiale</a></li>
+                            <li><a class="dropdown-item" href="#">Your Profile</a></li>
                             <li><a class="dropdown-item" href="#">Your Collections</a></li>
                             <li><a class="dropdown-item" href="#">Settings</a></li>
                             <li><a class="dropdown-item" href="#">Change Language</a></li>
-                            <li><a class="dropdown-item" href="#">Lagout</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item d-flex justify-content-around" href="#">
                                 <i class="fa-brands fa-instagram"></i>
@@ -77,53 +69,28 @@
                         </ul>
                     </li>
                     <button class="btn btn-outline-success" type="submit">Sign Up</button>
-                    
                 </div>    
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      <!-- Link section -->
+    <!-- Link section -->
+    <section class="container-fluid d-flex align-content-center justify-content-center gap-4  link-btn" id="activeBtn">
+        <a href="./video.html" class="btns active">Videos</a>
+        <a href="./index.html" class="btns">Images</a>
+    </section>
 
-      <section class="container-fluid d-flex align-content-center justify-content-center gap-4  link-btn" id="activeBtn">
-          <a href="./video.html" class="btns ">Home</a>
-          <a href="./index.html" class="btns ">Images</a>
-        </section>
-
-       <!-- Gallery section -->
-        <!-- See good hd photos -->
-
-      <section class="container d-flex flex-column align-content-center">
-        <ul class="images gap-5">
-            <li class="card">
-                <img src="./images/img-1.jpg" alt="">
-                <div class="details d-flex align-content-center justify-content-between position-absolute">
-                    <div class="photographer d-flex align-items-center">
-                        <i class="fa-solid fa-camera"></i>
-                        <span>maria loznevaya</span>
-                    </div>
-                    <button><i class="fa-solid fa-download"></i></button>
-                </div>
-            </li>
-            <li class="card"><video src="./images/img-1.jpg"></video></li>
-            <li class="card"><video src="./images/img-2.jpg"></video></li>
-            <li class="card"><video src="./images/img-10.jpg"></video></li>
-            <li class="card"><video src="./images/img-3.jpg"></video></li>
-            <li class="card"><video src="./images/img-5.jpg"></video></li>
-            <li class="card"><video src="./images/img-6.jpg"></video></li>
-            <li class="card"><video src="./images/img-8.jpg"></video></li>
-            <li class="card"><video src="./images/img-7.jpg"></video></li>
-            <li class="card"><video src="./images/img-9.jpg"></video></li>
-        </ul>
+    <!-- Gallery section -->
+    <section class="container d-flex flex-column align-content-center">
+        <ul class="videos gap-5"></ul>
         <div class="m-auto button">
-            <button class="btn btn-outline-success load-more ">See More</button>
+            <button class="btn btn-outline-success load-more">See More</button>
         </div>
     </section>
 
     <!-- Footer section -->
-
     <footer class="container-fluid d-flex justify-content-evenly align-content-center my-5 py-5">
-        <p class="copy"> &copy; www.Imager.come</p>
+        <p class="copy">&copy; www.Imager.come</p>
         <div class="copy-icons">
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
@@ -132,9 +99,7 @@
         </div> 
     </footer>
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+    <script src="./js/video.js"></script>
+</body>
 </html>

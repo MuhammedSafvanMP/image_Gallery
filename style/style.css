@@ -12,7 +12,7 @@ a{
 li{
     list-style: none;
 }
-.input-container{
+.search-box{
    position: relative;
     width: 100%;
     border: none;
@@ -26,7 +26,7 @@ li{
 }
 .search-icon{
     position: absolute;
-    top: 12px;
+    top: 1.6rem;
     left: 20px;
 }
 .search-icon i{
@@ -46,20 +46,20 @@ li{
     
     /* Galllery section */
 
- .images {
+ .videos, .images {
     /* gap: 15px; */
     columns: 5 340px;
     max-width: 95%;
     margin-top: 40px;
 }
-.images .card {
+.card {
     position: relative;
     list-style: none;
     margin-bottom: 14px;
     border-radius: 4px;
     overflow: hidden;
 }
-.images .card .details {
+.card .details {
     bottom: -100px;
     width: 100%;
     padding: 15px 20px;
@@ -70,7 +70,7 @@ li{
 .details span{
     font-size: 1.2rem;
 }
-.images .card:hover .details {
+.card:hover .details {
     bottom: 0;
 }
 .photographer i {
